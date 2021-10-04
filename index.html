@@ -4,7 +4,7 @@
         <title>Meeting Minutes 10/3/21</title>
         <meta charset="UTF-8">
         <meta author="Mihir Kekkar">
-        <link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/b/b0/Wikipedia-favicon.png">
+        <link rel="icon" type="image/png" href="Wikipedia-favicon.png">
     </head>
     <body>
         <a id="page-top"></a>
@@ -13,6 +13,13 @@
             <h2>Initial checkin</h2>
             <h3>Date: 10/3/21</h3>
         </header>
+        <nav class="menu">
+            <ol>
+                <li class="menu"><a href="#members">Members</a></li>
+                <li class="menu"><a href="#agenda">Agenda</a></li>
+                <li class="menu"><a href="#proposal">Project Proposal</a></li>
+            </ol>
+        </nav>
         <main>
             <section>
                 <h2>Audio Log</h2>
@@ -29,6 +36,7 @@
                 </audio>
             </section>
             <section>
+                <a id="members"></a>
                 <h2>Members:</h2>
                 <ul>
                     <li>John Doe</li>
@@ -38,6 +46,7 @@
                 </ul>
             </section>
             <section>
+                <a id="agenda"></a>
                 <h2>Agenda:</h2>
                 <ol>
                     <li>Group Introductions</li>
@@ -47,19 +56,29 @@
                 </ol>
             </section>
             <section>
+                <a id="proposal"></a>
                 <h2>Project Proposal</h2>
-                <div class="project-proposal">
-                    <p>
-                        This project is <strong>very important and highly classified.</strong> Our 
-                        proposal is to create a new search engine that orders results from the 
-                        <em>lowest</em> to <em>highest</em> accuracy so that users can find new 
-                        information they did not expect or know about.
-                    </p>
-                    <p>
-                        The results which partially match their search query should be <b>bolded</b>,
-                         while those that do not match at all should be <i>italicized</i>.
-                    </p>
-                </div>
+                <details>
+                    <summary><b>Click to Expand</b></summary>
+                    <div class="project-proposal">
+                        <p>
+                            This project is <strong>very important and highly classified.</strong> Our 
+                            proposal is to create a new search engine that orders results from the 
+                            <em>lowest</em> to <em>highest</em> accuracy so that users can find new 
+                            information they did not expect or know about.
+                        </p>
+                        <p>
+                            The results which partially match their search query should be <b>bolded</b>, 
+                            while those that do not match at all should be <i>italicized</i>. If any 
+                            results are a direct match of the search, then they should be  
+                            <span><b><i>both bolded and italicized</i></b></span>.
+                        </p>
+                    </div>
+                  </details>
+            </section>
+            <section>
+                <h2>Our Competitors:</h2>
+                <img src="google.png" alt="Google" width="337" height="150">
             </section>
             <section>
                 <h2>Thanks for attending! See you all next week!</h2>
@@ -69,25 +88,29 @@
             <p>Author: Mihir Kekkar</p>
             <a href="#top">Back to top</a>
         </footer><br>
+        <hr>
         <div>
             <h1>A sample form:</h1>
             <form>
                 <label for="name">Please enter your name:</label>
                 <input type="text" id="name" name="name"><br><br>
-                <p>Favorite Boolean:</p>
-                <input type="radio" id="true" name="bool" value="true">
-                <label for="true">True</label><br>
-                <input type="radio" id="false" name="bool" value="false">
-                <label for="false">False</label><br>
-                <p>Select all even numbers:</p>
-                <input type="checkbox" id="num0" name="num0" value="zero">
-                <label for="num0">Zero</label><br>
-                <input type="checkbox" id="num1" name="num1" value="one">
-                <label for="num0">One</label><br>
-                <input type="checkbox" id="num2" name="num2" value="two">
-                <label for="num0">Two</label><br>
-                <input type="checkbox" id="num3" name="num3" value="three">
-                <label for="num0">Three</label><br><br>
+                <fieldset>
+                    <legend>Some math stuff</legend>
+                    <p>Favorite Boolean:</p>
+                    <input type="radio" id="true" name="bool" value="true">
+                    <label for="true">True</label><br>
+                    <input type="radio" id="false" name="bool" value="false">
+                    <label for="false">False</label><br>
+                    <p>Select all even numbers:</p>
+                    <input type="checkbox" id="num0" name="num0" value="zero">
+                    <label for="num0">Zero</label><br>
+                    <input type="checkbox" id="num1" name="num1" value="one">
+                    <label for="num0">One</label><br>
+                    <input type="checkbox" id="num2" name="num2" value="two">
+                    <label for="num0">Two</label><br>
+                    <input type="checkbox" id="num3" name="num3" value="three">
+                    <label for="num0">Three</label><br><br>
+                </fieldset>
                 <label for="select-list">Pick an option:</label>
                 <select id="select-list" name="select-list">
                     <option value="opt1">The first option</option>
