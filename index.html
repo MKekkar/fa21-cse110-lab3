@@ -5,13 +5,23 @@
         <meta charset="UTF-8">
         <meta name="author" content="Mihir Kekkar">
         <link rel="icon" type="image/png" href="Wikipedia-favicon.png">
-        <link href="style.css" rel="stylesheet">
+        <link href="./style.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@100&display=swap" rel="stylesheet">
+        <style>
+            .header-h2 {
+                background-color: coral;
+                width: 15%;
+                height: 10%;
+            }
+        </style>
     </head>
     <body>
         <a id="page-top"></a>
         <header>
             <h1>Custom App Development Meeting</h1>
-            <h2>Initial checkin</h2>
+            <h2 class="header-h2">Initial checkin</h2>
             <h3>Date: 10/3/21</h3>
         </header>
         <nav class="menu">
@@ -46,7 +56,7 @@
                     <li>James Smith </li>
                 </ul>
             </section>
-            <section>
+            <section class="agenda">
                 <a id="agenda"></a>
                 <h2>Agenda:</h2>
                 <ol>
@@ -70,9 +80,9 @@
                         </p>
                         <p>
                             The results which partially match their search query should be <b>bolded</b>, 
-                            while those that do not match at all should be <i>italicized</i>. If any 
+                            while those that do not match at all should be <i id="italic">italicized</i>. If any 
                             results are a direct match of the search, then they should be  
-                            <span><b><i>both bolded and italicized</i></b></span>.
+                            <span id="bold-and-italic"><b><i>both bolded and italicized</i></b></span>.
                         </p>
                     </div>
                   </details>

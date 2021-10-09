@@ -1,0 +1,71 @@
+
+/* want to make the nav bar stacked */
+nav {
+    position: sticky;
+    z-index: 2;
+    top: 20px;
+    background-color: aliceblue;
+    border-style: double;
+    border-width: 2px;
+    border-radius: 5px;
+    border-color: cornflowerblue;
+    max-width: 40vw;
+    max-height: 30vh;
+    margin: 10px;
+
+}
+
+/* want to make video not move */
+video {
+    position: static;
+    z-index: 0;
+    border: .5vmin solid black;
+    margin: auto;
+}
+
+* {
+    font-family: 'Noto Sans Display', sans-serif;
+}
+
+.project-proposal {
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: 3px;
+    margin-right: 3px;
+    background-color: rgba(252, 92, 0, 0.9);
+}
+
+#bold-and-italic {
+    display: inline-block;
+    color: #000fff;
+
+}
+
+#italic {
+    display: inline;
+    color: hsl(238, 100%, 50%)
+}
+
+body {
+    background-color: orange;
+}
+
+.menu { 
+    padding-left: 2px;
+    padding-right: 5px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.agenda {
+    padding: 2px;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* extra emphasis desired */
+em {
+    text-decoration: underline;
+}
