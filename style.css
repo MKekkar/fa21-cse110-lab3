@@ -66,6 +66,65 @@ h1 {
 }
 
 /* extra emphasis desired */
-em {
+em, strong {
     text-decoration: underline;
 }
+
+#competitor-link:hover {
+    color:hsl(238, 100%, 50%);
+}
+
+#competitor-link:active {
+    color:orchid;
+}
+
+a:active {
+    color:orangered;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+main.ol {
+    flex-shrink: 2;
+}
+
+main.ul {
+    flex-shrink: 3;
+}
+
+label[for] {
+    color:rgb(2, 27, 53);
+}
+
+section summary {
+    background-color: tan;
+}
+
+section > p {
+    background-color: rgb(163, 152, 0);
+}
+
+p + p {
+    margin: 5px;
+}
+
+label ~ label {
+    background-color: tomato;
+}
+
+#sample-form {
+    display: grid;
+    grid-template-columns: 1fr 500px 1fr 1fr;
+}
+
+#form-title {
+    grid-column-start: auto;
+    grid-column-end: auto;
+    grid-row-start: auto;
+    grid-row-end: auto;
+}
+
